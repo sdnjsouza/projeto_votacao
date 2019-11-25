@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="../css/votacao.css">
+    <script type="text/javascript" src="../js/votacao.js">
+       
+
+    </script>
+
+</head>
+
+<body >
+<header >
+  
+        
+        
+<ul class="vertical menu align-center">
+    <li>  <h2>Verifique se precisará votar</h2></li>
+    <li><h6>Obs: mesma data não exibe valor</h6></li>
+
+</ul>
+</header>
+   
+<main class=" grid-x grid-padding-x " style="background-color: gainsboro; min-height: 500px;" >
+        <div class="cell large-2"></div>
+        <div class="  cell small-12 large-4  " >
+                <fieldset class="fieldset">
+                    <legend>Verifique</legend>
+                    <label> Digite a data de nascimento: </label>
+                    <input type="date" min="1910-10-10" id="nascimento" /><br>
+                    <label> Digite a data da votação: </label>
+                    <input type="date"  id="votacao" />
+                    <button class="button" onclick="votacao()">Resultado</button>
+                    
+                </fieldset>
+
+        </div>
+
+        <div class=" cell small-12 large-4" > 
+                <fieldset class=" fieldset">
+                    <legend>Resultado</legend>
+                    <label> Idade </label>
+                    <input type="number"  id="idade" size="30" readonly="readonly" /><br>
+                    <label> Estado de votação </label>
+                    <input type="text" id="estado" size="30" readonly="readonly" />
+                   
+                </fieldset>
+        </div>
+        <div class="cell large-2"></div>
+
+    </main>
+    <footer style="background-color: black; color: blanchedalmond; min-height: 200px;" >
+            <h5 class="text-center">Desenvolvido por S.J.Souza</h5>
+        </footer>
+</body>
+
+</html>
